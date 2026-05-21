@@ -618,52 +618,7 @@
     max-width: 520px;
   }
 
-  /* GERMANY SECTION */
-  #germany {
-    background: var(--surface);
-    position: relative;
-    overflow: hidden;
-  }
-
-  #germany::before {
-    content: 'DE';
-    position: absolute;
-    right: -20px; top: 50%;
-    transform: translateY(-50%);
-    font-size: 300px;
-    font-weight: 800;
-    color: rgba(0,229,255,0.02);
-    line-height: 1;
-    pointer-events: none;
-    font-family: var(--sans);
-    letter-spacing: -0.05em;
-  }
-
-  .germany-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 48px;
-    align-items: start;
-  }
-
-  .germany-card {
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    padding: 28px;
-    position: relative;
-  }
-
-  .germany-card-title {
-    font-family: var(--mono);
-    font-size: 12px;
-    color: var(--accent);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
+  /* GOALS SECTION */
 
   .uni-list { list-style: none; }
   .uni-item {
@@ -827,7 +782,6 @@
     .projects-grid { grid-template-columns: 1fr; }
     .project-card.featured { grid-column: span 1; grid-template-columns: 1fr; gap: 20px; }
     .stats-row { grid-template-columns: repeat(2, 1fr); }
-    .germany-grid { grid-template-columns: 1fr; }
     .contact-grid { grid-template-columns: 1fr; }
     footer { padding: 24px; flex-direction: column; gap: 12px; text-align: center; }
   }
@@ -1060,7 +1014,7 @@
           <div class="timeline-desc">Graduated from GTN Arts College, Dindigul. Shipped multiple live AI projects. CodeMind deployed globally. Building the next chapter.</div>
         </div>
         <div class="timeline-item">
-          <div class="timeline-date">JAN 2027 — NEXT</div>
+          <div class="timeline-date">2027 — NEXT</div>
           <div class="timeline-title">What's Next 👀</div>
           <div class="timeline-desc">Currently focused on freelance AI consulting, open source contributions, and building toward the next big move. Stay tuned.</div>
         </div>
@@ -1069,86 +1023,7 @@
   </div>
 </section>
 
-<!-- GERMANY HIDDEN -->
-<section id="germany" style="display:none">
-  <div class="section-inner">
-    <div class="section-label">Goal</div>
-    <h2 class="section-title reveal">Germany 2027 🇩🇪</h2>
-    <p class="section-sub reveal">MSc AI Engineering · University of Passau + 10 universities · Deadline Jan 15, 2027</p>
 
-    <div class="germany-grid reveal">
-      <div>
-        <!-- Progress -->
-        <div class="germany-card" style="margin-bottom:24px;">
-          <div class="germany-card-title">📊 Application Progress</div>
-          <div class="progress-item">
-            <div class="progress-label"><span>Academic (GPA 2.50)</span><span style="color:var(--accent3)">100%</span></div>
-            <div class="progress-bar-bg"><div class="progress-bar-fill green" data-width="100"></div></div>
-          </div>
-          <div class="progress-item">
-            <div class="progress-label"><span>CS Credits (72/40 req.)</span><span style="color:var(--accent3)">100%</span></div>
-            <div class="progress-bar-bg"><div class="progress-bar-fill green" data-width="100"></div></div>
-          </div>
-          <div class="progress-item">
-            <div class="progress-label"><span>Math Credits (37/35 req.)</span><span style="color:var(--accent3)">100%</span></div>
-            <div class="progress-bar-bg"><div class="progress-bar-fill green" data-width="100"></div></div>
-          </div>
-          <div class="progress-item">
-            <div class="progress-label"><span>APS Certificate</span><span style="color:var(--accent)">In Progress</span></div>
-            <div class="progress-bar-bg"><div class="progress-bar-fill" data-width="30"></div></div>
-          </div>
-          <div class="progress-item">
-            <div class="progress-label"><span>Passport</span><span style="color:var(--danger)">Urgent</span></div>
-            <div class="progress-bar-bg"><div class="progress-bar-fill" style="background:var(--danger)" data-width="15"></div></div>
-          </div>
-          <div class="progress-item">
-            <div class="progress-label"><span>SOP / LOM / Recs</span><span style="color:var(--muted)">Oct–Dec 2026</span></div>
-            <div class="progress-bar-bg"><div class="progress-bar-fill purple" data-width="5"></div></div>
-          </div>
-        </div>
-
-        <div class="germany-card">
-          <div class="germany-card-title">📅 Key Dates</div>
-          <div style="display:flex; flex-direction:column; gap:14px;">
-            <div style="display:flex; justify-content:space-between; font-size:13px; border-bottom:1px solid var(--border); padding-bottom:14px;">
-              <span style="color:var(--text)">APS Application</span>
-              <span style="font-family:var(--mono); color:var(--danger); font-size:11px;">URGENT — May 2026</span>
-            </div>
-            <div style="display:flex; justify-content:space-between; font-size:13px; border-bottom:1px solid var(--border); padding-bottom:14px;">
-              <span style="color:var(--text)">Build 3+ GitHub Projects</span>
-              <span style="font-family:var(--mono); color:var(--accent); font-size:11px;">Jun–Sep 2026</span>
-            </div>
-            <div style="display:flex; justify-content:space-between; font-size:13px; border-bottom:1px solid var(--border); padding-bottom:14px;">
-              <span style="color:var(--text)">Write SOP + Collect LORs</span>
-              <span style="font-family:var(--mono); color:var(--accent2); font-size:11px;">Oct–Dec 2026</span>
-            </div>
-            <div style="display:flex; justify-content:space-between; font-size:13px;">
-              <span style="color:var(--text)">Final Application Deadline</span>
-              <span style="font-family:var(--mono); color:var(--accent3); font-size:11px;">Jan 15, 2027</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="germany-card">
-        <div class="germany-card-title">🎓 Target Universities (11)</div>
-        <ul class="uni-list">
-          <li class="uni-item"><span class="uni-tier tier-1">T1</span> Hochschule Bonn-Rhein-Sieg</li>
-          <li class="uni-item"><span class="uni-tier tier-1">T1</span> Hochschule Darmstadt</li>
-          <li class="uni-item"><span class="uni-tier tier-1">T1</span> Hochschule Karlsruhe</li>
-          <li class="uni-item"><span class="uni-tier tier-1">T1</span> TH Köln</li>
-          <li class="uni-item"><span class="uni-tier tier-1">T1</span> Hochschule Bielefeld</li>
-          <li class="uni-item"><span class="uni-tier tier-2">T2</span> University of Kassel</li>
-          <li class="uni-item"><span class="uni-tier tier-2">T2</span> University of Bremen</li>
-          <li class="uni-item"><span class="uni-tier tier-2">T2</span> BTU Cottbus</li>
-          <li class="uni-item"><span class="uni-tier tier-2">T2</span> University of Siegen</li>
-          <li class="uni-item"><span class="uni-tier tier-3">★</span> University of Passau</li>
-          <li class="uni-item"><span class="uni-tier tier-3">★</span> University of Potsdam</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- CONTACT -->
 <section id="contact">
@@ -1157,15 +1032,15 @@
     <div class="contact-grid">
       <div>
         <p class="big-quote">
-          <em>Build quietly.</em><br>Win loudly.<br>Germany is waiting.
+          <em>Build quietly.</em><br>Win loudly.<br>The future is being coded.
         </p>
         <div class="location-badge">📍 Dindigul, Tamil Nadu, India</div>
         <p style="font-size:14px; color:var(--muted); line-height:1.7;">
-          Open for freelance AI/web projects, collaborations, and consulting. Especially interested in work that can go in my Germany SOP.
+          Open for freelance AI/web projects, collaborations, and consulting. Especially interested in AI, automation, and full-stack projects.
         </p>
       </div>
       <div class="contact-links">
-        <a href="https://github.com/franklinjosva2605" target="_blank" class="contact-link">
+        <a href="https://github.com/franklinjosva2605-dot" target="_blank" class="contact-link">
           <span class="contact-icon">⌨️</span>
           <div class="contact-info">
             <div class="contact-platform">GitHub</div>
@@ -1189,11 +1064,11 @@
           </div>
           <span class="contact-arrow">→</span>
         </a>
-        <a href="mailto:hello@franklinjosva.dev" class="contact-link">
+        <a href="mailto:franklinjosva2605@gmail.com" class="contact-link">
           <span class="contact-icon">📬</span>
           <div class="contact-info">
             <div class="contact-platform">Email</div>
-            <div class="contact-value">hello@franklinjosva.dev</div>
+            <div class="contact-value">franklinjosva2605@gmail.com</div>
           </div>
           <span class="contact-arrow">→</span>
         </a>
@@ -1204,7 +1079,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-copy">© 2026 Franklin Josva A — AI Engineer</div>
+  <div class="footer-copy">© 2026 Franklin Josva — AI Engineer & Builder</div>
   <div class="footer-motto">Build quietly. Win loudly. ⚡</div>
 </footer>
 
