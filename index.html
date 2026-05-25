@@ -618,8 +618,6 @@
     max-width: 520px;
   }
 
-  /* GOALS SECTION */
-
   .uni-list { list-style: none; }
   .uni-item {
     display: flex;
@@ -893,7 +891,6 @@
     </div>
     <p class="section-sub reveal">Live deployments and experiments. All shipped. All real.</p>
 
-    <!-- Stats row — auto-updates -->
     <div class="stats-row reveal" id="statsRow">
       <div class="stat-block">
         <span class="stat-num" id="statLive">0</span>
@@ -913,13 +910,11 @@
       </div>
     </div>
 
-    <!-- Empty state -->
     <div id="emptyState" style="display:none; text-align:center; padding:80px 40px; border:1px dashed var(--border); margin-bottom:0;">
       <div style="font-size:40px; margin-bottom:16px;">📂</div>
       <div style="font-family:var(--mono); font-size:13px; color:var(--muted);">No projects yet. Hit <strong style="color:var(--accent)">+ Add Project</strong> to get started.</div>
     </div>
 
-    <!-- Projects grid -->
     <div class="projects-grid" id="projectsGrid"></div>
   </div>
 </section>
@@ -1011,7 +1006,7 @@
         <div class="timeline-item">
           <div class="timeline-date">MAY 2026 — GRADUATION</div>
           <div class="timeline-title">B.Sc. IT Completed</div>
-          <div class="timeline-desc">Graduated from GTN Arts College, Dindigul. Shipped multiple live AI projects. CodeMind deployed globally. Building the next chapter.</div>
+          <div class="timeline-desc">Graduated from GTN Arts College, Dindigul. Shipped multiple live AI projects. ZeravaneAI deployed globally. Building the next chapter.</div>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">2027 — NEXT</div>
@@ -1022,8 +1017,6 @@
     </div>
   </div>
 </section>
-
-
 
 <!-- CONTACT -->
 <section id="contact">
@@ -1048,11 +1041,11 @@
           </div>
           <span class="contact-arrow">→</span>
         </a>
-        <a href="https://codemindf-glnckrphc4yhdmsjk4y4fx.streamlit.app/" target="_blank" class="contact-link">
-          <span class="contact-icon">🤖</span>
+        <a href="https://zeravaneai1605.streamlit.app/" target="_blank" class="contact-link">
+          <span class="contact-icon">⚡</span>
           <div class="contact-info">
             <div class="contact-platform">Live App</div>
-            <div class="contact-value">CodeMind / ZeravaneAI</div>
+            <div class="contact-value">ZeravaneAI — Web Data UNLOCKED</div>
           </div>
           <span class="contact-arrow">→</span>
         </a>
@@ -1123,9 +1116,7 @@
     });
   });
 
-  // ──────────────────────────────────────────────
   // PROJECT MANAGER
-  // ──────────────────────────────────────────────
   let projects = JSON.parse(localStorage.getItem('fj_projects') || '[]');
   let deleteTargetId = null;
 
@@ -1253,12 +1244,10 @@
     closeModal();
   });
 
-  // Keyboard shortcuts
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') { closeModal(); closeDelete(); }
   });
 
-  // Init
   renderProjects();
 </script>
 
