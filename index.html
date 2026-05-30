@@ -843,8 +843,10 @@
         <div class="t-line"><span class="t-prompt">$</span><span class="t-key">gpu</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-val">"RTX 3060 6GB"</span></div>
         <div class="t-line"><span class="t-prompt">$</span><span class="t-key">device</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-val">"ASUS TUF F15"</span></div>
         <div class="t-blank"></div>
-        <div class="t-line"><span class="t-comment"># Goals</span></div>
-        <div class="t-line"><span class="t-prompt">$</span><span class="t-key">status</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-val green">"building · shipping"</span></div>
+        <div class="t-line"><span class="t-comment"># Latest</span></div>
+        <div class="t-line"><span class="t-prompt">$</span><span class="t-key">project</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-val green">"ZeravaneAI"</span></div>
+        <div class="t-line"><span class="t-prompt">$</span><span class="t-key">event</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-val purple">"Lablab.ai Hackathon 2026"</span></div>
+        <div class="t-line"><span class="t-prompt">$</span><span class="t-key">status</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-val green">"live · shipped · competing"</span></div>
         <div class="t-line"><span class="t-prompt">$</span>&nbsp;<span class="cursor-blink"></span></div>
       </div>
     </div>
@@ -859,6 +861,9 @@
     <p class="section-sub reveal">From local LLM deployment to full-stack web apps — I work across the entire AI engineering pipeline.</p>
 
     <div class="skills-grid">
+      <div class="skill-chip reveal"><span class="skill-icon">🌐</span><span class="skill-name">Bright Data</span></div>
+      <div class="skill-chip reveal"><span class="skill-icon">⚡</span><span class="skill-name">Groq API</span></div>
+      <div class="skill-chip reveal"><span class="skill-icon">🔎</span><span class="skill-name">RAG Pipelines</span></div>
       <div class="skill-chip reveal"><span class="skill-icon">🐍</span><span class="skill-name">Python</span></div>
       <div class="skill-chip reveal"><span class="skill-icon">🦜</span><span class="skill-name">LangChain</span></div>
       <div class="skill-chip reveal"><span class="skill-icon">🤖</span><span class="skill-name">CrewAI</span></div>
@@ -1006,12 +1011,17 @@
         <div class="timeline-item">
           <div class="timeline-date">MAY 2026 — GRADUATION</div>
           <div class="timeline-title">B.Sc. IT Completed</div>
-          <div class="timeline-desc">Graduated from GTN Arts College, Dindigul. Shipped multiple live AI projects. ZeravaneAI deployed globally. Building the next chapter.</div>
+          <div class="timeline-desc">Graduated from GTN Arts College, Dindigul. Shipped multiple live AI projects including ZeravaneAI — deployed globally on Streamlit Cloud.</div>
         </div>
         <div class="timeline-item">
-          <div class="timeline-date">2027 — NEXT</div>
-          <div class="timeline-title">What's Next 👀</div>
-          <div class="timeline-desc">Currently focused on freelance AI consulting, open source contributions, and building toward the next big move. Stay tuned.</div>
+          <div class="timeline-date">MAY 2026 — HACKATHON</div>
+          <div class="timeline-title">Lablab.ai × Bright Data Hackathon 2026 ⚡</div>
+          <div class="timeline-desc">Built ZeravaneAI — a production RAG agent with 3-tier Bright Data scraping, 3-tier LLM fallback (Gemini 2.5 Flash → Groq → AI/ML API), ChromaDB vector store, GitHub Analyzer, Tech Stack Detector, and Code Generator. 5-tab Streamlit app deployed live. Team: Singleton Vanguard.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2026–27 — NEXT</div>
+          <div class="timeline-title">MSc AI Engineering Applications Open 👀</div>
+          <div class="timeline-desc">Targeting MSc AI Engineering programs in Europe. Continuing freelance AI consulting, open source contributions, and building the portfolio toward the next chapter.</div>
         </div>
       </div>
     </div>
@@ -1041,10 +1051,10 @@
           </div>
           <span class="contact-arrow">→</span>
         </a>
-        <a href="https://zeravaneai1605.streamlit.app/" target="_blank" class="contact-link">
+        <a href="https://zeravaneai160506.streamlit.app/" target="_blank" class="contact-link">
           <span class="contact-icon">⚡</span>
           <div class="contact-info">
-            <div class="contact-platform">Live App</div>
+            <div class="contact-platform">Live App · Hackathon 2026</div>
             <div class="contact-value">ZeravaneAI — Web Data UNLOCKED</div>
           </div>
           <span class="contact-arrow">→</span>
@@ -1117,7 +1127,38 @@
   });
 
   // PROJECT MANAGER
-  let projects = JSON.parse(localStorage.getItem('fj_projects') || '[]');
+  let defaultProjects = [
+    {
+      id: 'zeravane2026',
+      name: 'ZeravaneAI — Web Data UNLOCKED',
+      desc: 'Production RAG agent built for Lablab.ai × Bright Data Hackathon 2026. Features 3-tier Bright Data scraping (Web Unlocker → SERP API → Fallback), 3-tier LLM fallback (Gemini 2.5 Flash → Groq → AI/ML API), ChromaDB vector store, GitHub Analyzer, Tech Stack Detector, Multi-URL Scraper, and Code Generator. 5-tab Streamlit app deployed globally.',
+      stack: ['Python', 'Streamlit', 'Gemini 2.5 Flash', 'Groq', 'ChromaDB', 'Bright Data', 'FastAPI', 'BeautifulSoup'],
+      url: 'https://zeravaneai160506.streamlit.app/',
+      status: 'live'
+    },
+    {
+      id: 'smartspend2024',
+      name: 'SmartSpend AI',
+      desc: 'Personal finance tracker with Ollama backend and AI-powered insights. Streamlit frontend with local LLM for expense categorization and spending analysis.',
+      stack: ['Python', 'Streamlit', 'Ollama', 'LangChain', 'Pandas'],
+      url: '',
+      status: 'live'
+    },
+    {
+      id: 'wowliq2025',
+      name: 'Wowliq Social Platform',
+      desc: 'Full-stack social platform deployed on Vercel. Modern web app with real-time features and a clean user interface.',
+      stack: ['React', 'Vercel', 'Next.js'],
+      url: 'https://wowliq-app-3l2b.vercel.app/',
+      status: 'live'
+    }
+  ];
+
+  let projects = JSON.parse(localStorage.getItem('fj_projects') || 'null');
+  if (projects === null) {
+    projects = defaultProjects;
+    localStorage.setItem('fj_projects', JSON.stringify(projects));
+  }
   let deleteTargetId = null;
 
   const grid = document.getElementById('projectsGrid');
